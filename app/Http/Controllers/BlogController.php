@@ -19,6 +19,12 @@ class BlogController extends Controller
         return view('blog', compact('data'));
     }
 
+    public function content($slug){
+        $data = Post::where('slug', $slug)->get();
+
+        return view('blog.isipost', compact('data'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
