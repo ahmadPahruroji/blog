@@ -21,7 +21,7 @@
 
     setelah itu php artisan key:generate
 
-    jangan lupa buat database (perpusku_gc) di phpmyadmin
+    jangan lupa buat database (db_blog) di phpmyadmin
 
     langkah selanjutnya setting database nya di .env
 
