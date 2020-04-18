@@ -6,7 +6,7 @@
 			<div id="hot-post" class="row hot-post">
 				
 					@yield('contents')
-				
+					
 				@include('templateblog.widget')
 			</div>
 		</div>

@@ -9,4 +9,12 @@ class Category extends Model
     //
     protected $guarded = ['id'];
     protected $fillable = ['name','slug'];
+
+    public function post(){
+    	return $this->hasMany('App\Post');
+    }
+
+    public function getRouteKeyName(){
+    	return 'slug';
+    }
 }

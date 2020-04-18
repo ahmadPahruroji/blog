@@ -93,8 +93,7 @@
 						@endforeach
 						<!-- /post -->
 					</div>
-				</div>
-			</div>
+	
 			
 </div>
 				

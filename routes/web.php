@@ -22,6 +22,9 @@ Route::get('/', 'BlogController@index');
 // });
 
 Route::get('/content/{slug}', 'BlogController@content')->name('blog.content');
+Route::get('/list-post', 'BlogController@listblog')->name('blog.list');
+Route::get('/list-category/{category}', 'BlogController@listcategory')->name('blog.category');
+Route::get('/cari', 'BlogController@cari')->name('blog.cari');
 
 Route::group(['middleware' => 'auth'], function() {
     //
